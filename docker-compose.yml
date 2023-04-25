@@ -1,7 +1,8 @@
 version: '3'
 services:
-  build: .
-  ports:
-    - 7860:7860
-  environment:
-    - CLI_ARGS=--api --api-log
+  stable-diffusion:
+    build: .
+    ports:
+      - 7860:7860
+    environment:
+      - CLI_ARGS=--api --api-log
