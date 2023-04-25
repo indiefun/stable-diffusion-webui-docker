@@ -1,7 +1,9 @@
 version: '3'
 services:
   stable-diffusion:
-    build: .
+    build:
+      context: .
+      dockerfile: Dockerfile.Stable
     ports:
       - 7860:7860
     environment:
